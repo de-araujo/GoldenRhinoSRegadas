@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GoldenRhino.ViewModel.Registeration"
+             Style="{StaticResource PageStyle}"
+             xmlns:behaviours="clr-namespace:GoldenRhino.Code.Validation">
+    <!-- Changing the nav bar at the top-->
+    <NavigationPage.TitleView>
+        <Label Text="Register"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontSize="20"
+               FontAttributes="Bold"
+               TextColor="Gold"/>
+
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+
+        <ScrollView>
+           <StackLayout Padding="5" VerticalOptions="StartAndExpand">
+                <StackLayout Spacing="1" Padding="10" VerticalOptions="Center">
+                    <!--First Name-->
+
+                    <Label Text="First Name"
+                           FontAttributes="Bold"
+                           FontSize="14" TextColor="Gold"/>
+                    <Entry x:Name="FirstNameRegEntry"
+                           Placeholder="Enter Your First Name"
+                           FontSize="12" BackgroundColor="Gold" TextColor="Black"/>
+                    <!--Surname-->
+                    <Label Text="Surname"
+                           FontAttributes="Bold"
+                           FontSize="14" TextColor="Gold"/>
+                    <Entry x:Name="SurnameRegEntry"
+                           Placeholder="Enter Your Surname"
+                           FontSize="12" BackgroundColor="Gold" TextColor="Black"/>
+                    <!--Email-->
+                    <Label Text="Email"
+                           FontAttributes="Bold"
+                           FontSize="14" TextColor="Gold"/>
+                    <Entry x:Name="EmailRegEntry"
+                           Placeholder="Enter Your Email"
+                           FontSize="12" BackgroundColor="Gold" TextColor="Black">
+                        <Entry.Behaviors>
+                            <behaviours:EmailValidation/>
+                        </Entry.Behaviors>
+                    </Entry>
+                    <!--Password-->
+                    <Label Text="Password"
+                           FontAttributes="Bold"
+                           FontSize="14" TextColor="Gold"/>
+                    <Entry x:Name="PasswordRegEntry"
+                           Placeholder="Enter Your Password"
+                           FontSize="12" BackgroundColor="Gold" IsPassword="True"  TextColor="Black">
+                        <Entry.Behaviors>
+                            <behaviours:PasswordValidation/>
+                        </Entry.Behaviors>
+                    </Entry>
+
+                    <!--Confirm Password-->
+                    <Label Text="Confirm Password"
+                           FontAttributes="Bold"
+                           FontSize="14" TextColor="Gold"/>
+                    <Entry x:Name="ConfirmPasswordRegEntry"
+                           Placeholder="Enter Your Confirm Password"
+                           FontSize="12" BackgroundColor="Gold" IsPassword="True" TextColor="Black">
+                        <Entry.Behaviors>
+                            <behaviours:ConfirmPasswordValidation/>
+                        </Entry.Behaviors>
+                    </Entry>
+
+                    <!--Account Type-->
+                    <Label Text="Account Type" TextColor="Gold"/>
+                    <Picker x:Name="AccountTypePicker" HorizontalOptions="FillAndExpand" BackgroundColor="Gold" TextColor="Black"/>
+
+                    <StackLayout Padding="10">
+                        <!--Buttons-->
+                    <!--Existing Users-->
+                    <Button Clicked="BtnLogin_OnClicked"
+                            Text="Login using an existing account"
+                            Margin="5"
+                            HeightRequest="35"
+                            WidthRequest="155"
+                            BackgroundColor="Gold"
+                            TextColor="Black" />
+                    <!--Register a new account -->
+                    <Button Clicked="BtnRegister_OnClicked"
+                            Text="Register a new account"
+                            Margin="5"
+                            HeightRequest="35"
+                            WidthRequest="155"
+                            BackgroundColor="Gold"
+                            TextColor="Black"/>
+          
+                    </StackLayout>
+                </StackLayout>
+           </StackLayout>
+       </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

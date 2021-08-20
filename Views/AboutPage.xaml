@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Style="{StaticResource PageStyle}"
+             x:Class="GoldenRhino.Views.AboutPage">
+    <StackLayout>
+        <Label Text="About Us!"
+                   HorizontalOptions="Center"
+                   TextColor="Gold"
+                   FontSize="36"
+                   Padding="10"/>
+        <StackLayout Padding="10">
+            <Label Text="More About Us"
+                   TextColor="Gold"
+                   FontSize="24"/>
+            <Label Text="LOREM IPSUM"
+                   FontSize="12"
+                   TextColor="Gold"/>
+        </StackLayout>
+        <StackLayout Padding="10">
+            <Label Text="What We Do"
+                   TextColor="Gold"
+                   FontSize="24"/>
+            <Label Text="LOREM IPSUM"
+                   FontSize="12"
+                   TextColor="Gold"/>
+        </StackLayout>
+        <StackLayout Padding="10">
+            <Label Text="Why We Do It"
+                   TextColor="Gold"
+                   FontSize="24"/>
+            <Label Text="LOREM IPSUM"
+                   FontSize="12"
+                   TextColor="Gold"/>
+        </StackLayout>
+    </StackLayout>
+        
+   
+</ContentPage>

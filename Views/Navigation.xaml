@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xf:BottomBarPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:view="clr-namespace:GoldenRhino.Views"
+             xmlns:local="clr-namespace:GoldenRhino"
+             x:Class="GoldenRhino.Views.Navigation"
+             xmlns:xf="clr-namespace:BottomBar.XamarinForms;assembly=LH.BottomBar.XamarinForms">
+
+
+    <view:HomePage Title="Home" Icon="ic_home.png" xf:BottomBarPageExtensions.TabColor="Purple" />
+    <view:AboutPage Title="About" Icon="ic_about.png" xf:BottomBarPageExtensions.TabColor="Blue"/>
+    <view:GamesPage Title="Games" Icon="ic_games.png" xf:BottomBarPageExtensions.TabColor="Green"/>
+    <view:MembersPage Title="Members" Icon="ic_members.png" xf:BottomBarPageExtensions.TabColor="Yellow" />
+    <view:ContactPage Title="Contact" Icon="ic_contact.png" xf:BottomBarPageExtensions.TabColor="Orange" />
+    <view:SettingsPage Title="Setting" Icon="ic_contact.png" xf:BottomBarPageExtensions.TabColor="Red" />
+
+</xf:BottomBarPage>

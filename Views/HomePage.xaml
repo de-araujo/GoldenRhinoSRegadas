@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"      
+             xmlns:controls="clr-namespace:Xamd.ImageCarousel.Forms.Plugin.Abstractions;assembly=Xamd.ImageCarousel.Forms.Plugin.Abstractions" 
+             Style="{StaticResource PageStyle}"
+             x:Class="GoldenRhino.Views.HomePage">
+    <StackLayout>
+        <!--Carousel -->
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Start" >
+            <Image Margin="0,50,0,0" x:Name="imgBanner" Source="banner.png"></Image>
+        </StackLayout>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="End">
+            <controls:ImageCarousel x:Name="imgSlider" HeightRequest="300" WidthRequest="300" />
+        </StackLayout>
+
+        <!--News-->
+        <Label Text="Quick News" 
+               TextColor="Gold"
+               Padding="10,5"
+               FontSize="24"/>
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="5,10">
+                <Button Text="New Games"
+                        BackgroundColor="#1D211F"
+                        TextColor="Gold"
+                        x:Name="Article3Button"
+                        Clicked="Article3Button_Clicked"
+                        />
+                <Button Text="10 Members!"
+                        BackgroundColor="#1D211F"
+                        TextColor="Gold"
+                        x:Name="Article2Button"
+                        Clicked="Article2Button_Clicked"/>
+                <Button Text="App Launched"
+                        BackgroundColor="#1D211F"
+                        TextColor="Gold"
+                        x:Name="Article1Button"
+                        Clicked="Article1Button_Clicked"/>
+            </StackLayout>
+       
+    </StackLayout>
+</ContentPage>

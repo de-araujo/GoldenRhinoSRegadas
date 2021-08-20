@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "dgSpecHash": "HhuNQzGMAMnvPFXymVuY9FH3Dmnke+CUAe15ex82+8mjBiIqTp1qu/lcvh+Wwvy3hJBmxBAN1uF0quOmf5Pj+Q==",
+  "success": true,
+  "projectFilePath": "G:\\G\\GoldenRhino\\GoldenRhino\\GoldenRhino\\GoldenRhino.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mcmin\\.nuget\\packages\\lh.bottomnavigationbar.xf\\1.0.42\\lh.bottomnavigationbar.xf.1.0.42.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\mcmin\\.nuget\\packages\\sqlite-net-pcl\\1.5.231\\sqlite-net-pcl.1.5.231.nupkg.sha512",
+    "C:\\Users\\mcmin\\.nuget\\packages\\sqlitepclraw.bundle_green\\1.1.11\\sqlitepclraw.bundle_green.1.1.11.nupkg.sha512",
+    "C:\\Users\\mcmin\\.nuget\\packages\\sqlitepclraw.core\\1.1.11\\sqlitepclraw.core.1.1.11.nupkg.sha512",
+    "C:\\Users\\mcmin\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.4.0.991265\\xamarin.forms.4.4.0.991265.nupkg.sha512",
+    "C:\\Users\\mcmin\\.nuget\\packages\\xamd.plugins.forms.imagecarousel\\1.0.2\\xamd.plugins.forms.imagecarousel.1.0.2.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Xamd.Plugins.Forms.ImageCarousel 1.0.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Xamd.Plugins.Forms.ImageCarousel",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
+}
